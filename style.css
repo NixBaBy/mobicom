@@ -3,76 +3,150 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-  max-width: 1570px;
-  height: 72px;
-  background-color: gray;
-  border-radius: 12px;
-  margin: auto;
-  margin-top: 30px;
-  display: flex;
-  gap: 50px;
-  justify-content: space-between;
-  align-items: center;
+/* header */
+.content {
+  width: calc(100vw-94px);
+  margin: 0 45px;
 }
+.header {
+  width: 100%;
+  background-color: rgb(62, 59, 59);
+  height: 72px;
+  border-radius: 12px;
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+/* heaeder left */
 .headerleft {
   display: flex;
-  gap: 20px;
-  margin-left: 50px;
-  width: 200px;
+  gap: 30px;
+  align-items: center;
+  height: 60px;
+  margin-left: 20px;
 }
 .logo {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
+  width: 70px;
+  height: 30px;
 }
-.search {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
+.logo img {
+  width: 100%;
 }
+.search input {
+  border: none;
+  width: 200px;
+  height: 35px;
+  border-radius: 12px;
+  display: flex;
+  background-color: rgb(97, 97, 97);
+}
+/* header-med */
 .header-med {
   display: flex;
-  gap: 20px;
-  width: 200px;
+  gap: 35px;
+  color: white;
+  font-weight: 600;
 }
-.left-right {
+/* header right */
+.header-right {
   display: flex;
+  color: white;
   gap: 20px;
-}
-.uilchilgee {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
-}
-.medeelel {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
-}
-.delguur {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
-}
-.left-right {
-  display: flex;
-  gap: 20px;
-  width: 200px;
   margin-right: 50px;
 }
-.dark {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
+.header-right i {
+  background-color: rgb(97, 97, 97);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
 }
-.languege {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
+/* container */
+.container {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6237088585434174) 0%,
+      rgba(0, 0, 0, 0.20073967086834732) 100%
+    ),
+    url(https://osa.mobicom.mn/content/mcommerce/uploads/DJI_20231028181037_0240_D_MAX_Recovered_ezgif_com_jpg_to_webp_converter_d02db53f44.webp);
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 144px;
 }
-.store {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
+.container-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container h2 {
+  height: 280px;
+  display: flex;
+  align-items: end;
+  color: white;
+  font-weight: 700;
+  font-size: 3.3rem;
+}
+.container-right {
+  width: 522px;
+  height: 520px;
+  background-color: aqua;
+  border-radius: 12px;
+}
+.service-head {
+  color: white;
+  font-weight: 600;
+  background-color: rgb(97, 97, 97);
+  width: 482px;
+  height: 46px;
+  border-radius: 12px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #f4f4f4;
+  margin-top: 5px;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.service {
+  border-radius: 12px;
+  background-color: yellow;
+  width: 40%;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 128px;
+}
+.service-svg {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgb(247, 120, 120);
+  fill: rgb(247, 120, 120);
+  background-color: white;
+  border-radius: 50%;
+}
+.service-svg svg {
+  width: 30px;
+  height: 30px;
+}
+.services-name {
+  font-weight: 500;
 }
