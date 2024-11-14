@@ -201,6 +201,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 300px;
+
   padding-top: 100px;
 }
 
@@ -267,11 +269,14 @@
   flex-wrap: wrap;
 }
 /* slider */
+
 .slider {
   display: flex;
   gap: 20px;
-  width: 85%;
+  width: 100%;
   margin: auto;
+
+  height: 700px;
   margin-top: 30px;
   flex-wrap: wrap;
 }
@@ -358,6 +363,57 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
+  transition: 0.5s;
+}
+
+.slider1:hover {
+  transform: scale(1.08);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7539390756302521) 4%
+    ),
+    url(https://osa.mobicom.mn/content/mcommerce/uploads/1080_720_904f6b1f30.webp);
+
+  .slider-inv:hover {
+    opacity: 0;
+  }
+}
+.slider2:hover {
+  transform: scale(1.08);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7539390756302521) 4%
+    ),
+    url(https://osa.mobicom.mn/content/mcommerce/uploads/Special_Olympics_medee_721x1081_143e09ad6c.webp);
+}
+.slider3:hover {
+  transform: scale(1.08);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7539390756302521) 4%
+    ),
+    url(https://osa.mobicom.mn/content/mcommerce/uploads/5_G_1_1f3208070f.webp);
+}
+.slider4:hover {
+  transform: scale(1.08);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7539390756302521) 4%
+    ),
+    url(https://osa.mobicom.mn/content/mcommerce/uploads/1080_720_904f6b1f30.webp);
+}
+.slider5:hover {
+  transform: scale(1.08);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7539390756302521) 4%
+    ),
+    url(https://osa.mobicom.mn/content/mcommerce/uploads/mobicom_medee_1_1_be49b51926.webp);
 }
 .slider-top {
   width: 40px;
@@ -376,6 +432,9 @@
   max-width: 300px;
   margin-right: 20px;
 }
+.slider-inv {
+  opacity: 1;
+}
 .slider-top svg {
   fill: yellow;
   width: 20px;
@@ -389,11 +448,24 @@
 }
 /* shop */
 .shop {
-  margin-top: 300px;
   border-radius: 12px;
   height: 1003px;
   background-color: #f4f4f4;
   box-shadow: 0px 0px 48px -18px black;
+}
+.shop-content {
+  max-width: 1574px;
+  height: 903px;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.shop-header {
+  width: 400px;
+  height: 58px;
 }
 .shop-header h2 {
   font-weight: 700;
@@ -418,10 +490,97 @@
 .button-left :nth-child(1) {
   width: 93px;
   height: 40px;
-  background-color: black;
+  background-color: rgb(54, 53, 53);
   color: white;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.button-right {
+  font-size: 17px;
+  margin-top: 20px;
+  display: flex;
+}
+.button-right svg {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+/* shop-prodact */
+.shop-product {
+  display: flex;
+  gap: 15px;
+  width: 83%;
+}
+.hero-product {
+  width: 641px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 12px;
+  height: 641px;
+  padding: 0.71rem;
+}
+.hero-product:hover {
+  border: 1px solid red;
+}
+.hero-img {
+  width: 515px;
+  height: 523px;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+}
+.hero-imf {
+  width: 583px;
+  height: 56px;
+  margin: 1rem;
+}
+.hero-imf :nth-child(1) {
+  color: gray;
+  font-weight: 600;
+  font-size: 17px;
+}
+.hero-imf :nth-child(2) {
+  font-size: 2rem;
+}
+/* other product */
+.other {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.other-products {
+  display: flex;
+  gap: 15px;
+}
+.other-product1 {
+  width: 312px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 12px;
+  height: 312px;
+  padding: 0.71rem;
+}
+.other-product1:hover {
+  border: 1px solid red;
+}
+.other-img {
+  width: 217px;
+  height: 207px;
+  margin-bottom: 40px;
+}
+.other-img img {
+  width: 100%;
+  height: 100%;
+}
+.other-imf {
+  width: 282px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+}
+.other-imf :nth-child(1) {
+  font-weight: 600;
+  color: gray;
 }
