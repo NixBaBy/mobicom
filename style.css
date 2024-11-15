@@ -10,7 +10,7 @@
 }
 .header {
   width: 100%;
-  background-color: rgb(62, 59, 59);
+  background-color: #282828;
   height: 72px;
   border-radius: 12px;
   margin-top: 30px;
@@ -107,7 +107,7 @@
 .service-head {
   color: white;
   font-weight: 600;
-  background-color: rgb(97, 97, 97);
+  background-color: #292929;
   width: 498px;
   height: 46px;
   border-radius: 12px;
@@ -115,12 +115,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 7px solid rgb(233, 216, 226);
+  border: 7px solid #ffffffd9;
   margin-top: 5px;
 }
 .container-bot {
   display: flex;
-  background-color: rgb(233, 216, 226);
+  background-color: #ffffffd9;
   width: 498px;
   border-radius: 12px;
   justify-content: center;
@@ -157,7 +157,9 @@
     opacity: 1;
   }
 }
-
+.service:hover .service-svg {
+  box-shadow: 0px 0px 29px -10px red;
+}
 .service-svg {
   width: 60px;
   height: 60px;
@@ -201,8 +203,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 300px;
-
+  position: relative;
   padding-top: 100px;
 }
 
@@ -246,7 +247,7 @@
   font-size: 18px;
   display: flex;
   gap: 35px;
-  background-color: gray;
+  background-color: #3d3d3d;
   border: 1px solid rgb(151, 149, 149);
   width: 643px;
   height: 58px;
@@ -274,11 +275,15 @@
   display: flex;
   gap: 20px;
   width: 100%;
-  margin: auto;
-
-  height: 700px;
-  margin-top: 30px;
+  overflow: scroll;
+  flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
+  margin-top: -250px;
+
+  max-height: 640px;
+  height: 100%;
+  padding: 64px;
 }
 .slider img {
   width: 100%;
@@ -348,11 +353,11 @@
   background-size: cover;
   background-position: center;
 }
-.sliders h3 {
+.slider-bot h3 {
   color: white;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .slider1,
 .slider2,
@@ -374,10 +379,13 @@
       rgba(0, 0, 0, 0.7539390756302521) 4%
     ),
     url(https://osa.mobicom.mn/content/mcommerce/uploads/1080_720_904f6b1f30.webp);
-
-  .slider-inv:hover {
-    opacity: 0;
-  }
+}
+.slider1:hover .slider-inv,
+.slider2:hover .slider-inv,
+.slider3:hover .slider-inv,
+.slider4:hover .slider-inv,
+.slider5:hover .slider-inv {
+  opacity: 1;
 }
 .slider2:hover {
   transform: scale(1.08);
@@ -433,7 +441,11 @@
   margin-right: 20px;
 }
 .slider-inv {
-  opacity: 1;
+  opacity: 0;
+  color: gray;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .slider-top svg {
   fill: yellow;
@@ -444,12 +456,12 @@
   width: 300px;
   height: 2px;
   background-color: gray;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 /* shop */
 .shop {
   border-radius: 12px;
-  height: 1003px;
+  height: 1103px;
   background-color: #f4f4f4;
   box-shadow: 0px 0px 48px -18px black;
 }
@@ -464,7 +476,8 @@
   gap: 80px;
 }
 .shop-header {
-  width: 400px;
+  width: 450px;
+  margin-top: 90px;
   height: 58px;
 }
 .shop-header h2 {
@@ -490,7 +503,7 @@
 .button-left :nth-child(1) {
   width: 93px;
   height: 40px;
-  background-color: rgb(54, 53, 53);
+  background-color: #222222;
   color: white;
   border-radius: 12px;
   display: flex;
@@ -501,6 +514,7 @@
   font-size: 17px;
   margin-top: 20px;
   display: flex;
+  width: 150px;
 }
 .button-right svg {
   width: 15px;
@@ -583,4 +597,200 @@
 .other-imf :nth-child(1) {
   font-weight: 600;
   color: gray;
+}
+/* help */
+/* help-left */
+.help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 150px;
+}
+.help-left {
+  width: 509px;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.help-ai {
+  width: 509px;
+  height: 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #e4e7eb;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.left-h2 {
+  color: #262626;
+  font-size: 3.1rem;
+}
+.help-p {
+  width: 491px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #ee3f3d;
+  border-radius: 12px;
+}
+.help-ai p {
+  color: white;
+}
+.help-img {
+  width: 391px;
+  height: 24px;
+}
+.help-img img {
+  width: 100%;
+  height: 100%;
+}
+/* help-right */
+.help-right {
+  background-image: url(https://www.mobicom.mn/_next/image?url=https%3A%2F%2Fosa.mobicom.mn%2Fcontent%2Fmcommerce%2Fuploads%2FhelpBg.png&w=2048&q=75);
+  width: 792px;
+  height: 606px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.help-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+}
+.help-details2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.help-detail {
+  width: 384px;
+  height: 186px;
+  background-color: #fefbfb;
+  border: 1px solid #dfe2e6;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.detail-img {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #fdc1c0;
+  background-color: #fef1f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.detail-img img {
+  width: 30px;
+  height: 30px;
+}
+.detail-h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+  width: 320px;
+}
+.detail-h3 h3 {
+  color: #262626;
+}
+.detail-h3 p {
+  color: #787878;
+  font-size: 13px;
+}
+.detail-h3 div {
+  display: flex;
+}
+.detail-h3 svg {
+  margin-top: 5px;
+
+  width: 15px;
+  height: 15px;
+}
+@media only screen and (min-width: 1490px) {
+  .help-right1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1490px) {
+  .shop-product {
+    width: 788px;
+    height: 398px;
+  }
+  .hero-product {
+    width: 384px;
+    height: 396px;
+  }
+  .hero-img {
+    width: 300px;
+    height: 266px;
+  }
+  .other {
+    width: 388px;
+    height: 396px;
+  }
+  .other-img {
+    width: 104px;
+    height: 104px;
+  }
+  .other-product1 {
+    width: 186px;
+    height: 190px;
+  }
+  .other-imf {
+    width: 160px;
+    height: 48px;
+  }
+  .other-imf p {
+    font-size: 10px;
+  }
+  .other-imf h3 {
+    font-size: 13px;
+  }
+  .help {
+    display: block;
+  }
+  .help-left {
+    width: 90vw;
+    margin-bottom: 50px;
+  }
+  .help-ai {
+    width: 90vw;
+  }
+  .left-h2 {
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+  }
+  .help p {
+    width: 85vw;
+  }
+  .help-right {
+    display: none;
+  }
+  .help-right1 {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: scroll;
+    gap: 30px;
+    height: 200px;
+  }
 }
